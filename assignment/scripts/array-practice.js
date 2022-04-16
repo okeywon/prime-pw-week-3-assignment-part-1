@@ -107,5 +107,5 @@ console.log('Now it is a string:', favoriteFoods.join(' and '));
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
-let newArray = (a, b) => a.map((e, i) => [e, b[i]]);
-console.log(newArray(animalArray, favoriteFoods));
+let newArray = favoriteFoods.concat(animalArray);
+console.log(newArray);
